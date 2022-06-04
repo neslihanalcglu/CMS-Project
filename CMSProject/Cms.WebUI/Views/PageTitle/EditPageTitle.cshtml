@@ -1,0 +1,48 @@
+﻿@model Cms.DataAccess.Dtos.PageTitleDto
+@{
+    ViewData["Title"] = "EditPageTitle";
+}
+
+<h1>EditPageTitle</h1>
+
+<form method="post" enctype="multipart/form-data" asp-controller="PageTitle" asp-action="EditPageTitle">
+    <table>
+        <tr>
+            <td><input type="hidden" asp-for="id" /></td>
+        </tr>
+        <tr>
+            <td>Menu Title: </td>
+            <td><input type="text" id="MenuTitle" name="MenuTitle" asp-for="menutitle" /></td>
+        </tr>
+        <tr>
+            <td>Link: </td>
+            <td><input type="text" id="Link" name="Link" asp-for="link" /></td>
+        </tr>
+        <tr>
+            <td>Menu Description: </td>
+            <td><input type="text" id="MenuDescription" name="MenuDescription" asp-for="menudescription" /></td>
+        </tr>
+        <tr>
+            <td>Target Selection: </td>
+            <td><input type="text" id="TargetSelection" name="TargetSelection" asp-for="targetselection" /></td>
+        </tr>
+        <tr>
+            <td>Currents Language: </td>
+            <td><input type="text" id="CurrentsLanguage" name="CurrentsLanguage" asp-for="currentslanguage" /></td>
+        </tr>
+        <tr>
+            <td>Row Number: </td>
+            <td><input type="text" id="RowNumber" name="RowNumber" asp-for="rownumber" /></td>
+        </tr>
+        <tr>
+            <td>Root ID: </td>
+            <td><input type="text" id="RootID" name="RootID" asp-for="rootid" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Submit" /></td>
+        </tr>
+    </table>
+    <hr />
+
+</form>

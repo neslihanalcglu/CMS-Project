@@ -1,0 +1,23 @@
+﻿@model MenuListViewModel
+
+<ul class="nav navbar-nav">
+    @foreach (var item in Model.pageTitle.Where(w => w.rootid == 0).ToList())
+    {
+        <li class="dropdown" data-animation="fadeIn">
+            <a href="@Model.myfunc.GetUrl(item.link, "PageContents", "Index", item.menutitle)"> @item.menutitle</a>
+            @if (Model.pageTitle.Where(w => w.rootid == item.id).Count() > 0)
+            {
+                <ul class="dropdown-menu no-border-radius">
+                    @foreach (var item2 in Model.pageTitle.Where(w => w.rootid == item.id).ToList())
+                    {
+                        <li>
+                            @{
+                                <a href="@Model.myfunc.GetUrl(item2.link, "PageDetail", "Index", item2.id.ToString())"> @item2.menutitle</a> 
+                            }
+                        </li>                       
+                     }
+                </ul>
+             }
+        </li>
+     }
+</ul>

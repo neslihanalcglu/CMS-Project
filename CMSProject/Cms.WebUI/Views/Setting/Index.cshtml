@@ -1,0 +1,57 @@
+﻿@model List<Cms.Entities.DataContext.Setting>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<table class="table table-bordered table-responsive table-hover">
+    <tr>
+        <th>Id </th>
+        <th>PageTitle </th>
+        <th>PageDescription</th>
+        <th>WebServerAddress</th>
+        <th>WebServerPort</th>
+        <th>SMTPServerAddress</th>
+        <th>SMTPServerPort</th>
+        <th>WebMailUserName </th>
+        <th>WebMailPassword </th>
+        <th>Tel</th>
+        <th>Gsm</th>
+        <th>Fax</th>
+        <th>CompanyAddress</th>
+        <th>Location_Lat</th>
+        <th>Location_Lng </th>
+        <th>CompanyLogo </th>
+        <th>IsActive</th>
+        <th>CreatedDate</th>
+        <th>ModifiedDate</th>
+        <th>IsDeleted</th>
+    </tr>
+    @foreach (var d in Model)
+    {
+<tr>
+    <td>@d.Id</td>
+    <td>@d.PageTitle</td>
+    <td>@d.PageDescription</td>
+    <td>@d.WebServerAddress</td>
+    <td>@d.WebServerPort</td>
+    <td>@d.SMTPServerAddress</td>
+    <td>@d.SMTPServerPort</td>
+    <td>@d.WebMailUserName</td>
+    <td>@d.WebMailPassword</td>
+    <td>@d.Tel</td>
+    <td>@d.Gsm</td>
+    <td>@d.Fax</td>
+    <td>@d.CompanyAddress</td>
+    <td>@d.Location_Lat</td>
+    <td>@d.Location_Lng</td>
+    <td>@d.CompanyLogo</td>
+    <td>@d.IsActive</td>
+    <td>@d.CreatedDate</td>
+    <td>@d.ModifiedDate</td>
+    <td>@d.IsDeleted</td>
+    <td><a href="/Setting/EditSetting/@d.Id" class="btn btn-warning">Update</a></td>
+    <td><a href="/Setting/DeleteSetting/@d.Id" class="btn btn-danger">Delete</a></td>
+</tr>}
+</table>
+<a href="/Setting/CreateSetting/" class="btn btn-info">New Setting</a>
+

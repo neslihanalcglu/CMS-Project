@@ -1,0 +1,7 @@
+﻿@model MenuListViewModel
+<ul>
+    @foreach (var item in Model.pageTitle.Where(w => w.rootid == 0).ToList())
+    {
+<li><a href="@Model.myfunc.GetUrl(item.link, "PageContents", "Index", item.menutitle)">@item.menutitle</a></li>}
+</ul>
+ 

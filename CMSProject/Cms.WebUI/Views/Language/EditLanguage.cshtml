@@ -1,0 +1,32 @@
+﻿@model Cms.DataAccess.Dtos.LanguageDto
+@{
+    ViewData["Title"] = "EditLanguage";
+}
+
+<h1>EditLanguage</h1>
+<form method="post" enctype="multipart/form-data" asp-controller="Language" asp-action="EditLanguage">
+    <table>
+        <tr>
+            <td><input type="hidden" asp-for="Id" /></td>
+        </tr>
+        <tr>
+            <td>Language Tag: </td>
+            <td><input type="text" id="LanguageTag" name="LanguageTag" asp-for="LanguageTag" /></td>
+        </tr>
+        <tr>
+            <td>Title: </td>
+            <td><input type="text" id="Title" name="Title" asp-for="Title" /></td>
+        </tr>
+        <tr>
+            <td>Value: </td>
+            <td><input type="text" id="Value" name="Value" asp-for="Value" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Submit" /></td>
+        </tr>
+    </table>
+    <hr />
+
+</form>
+

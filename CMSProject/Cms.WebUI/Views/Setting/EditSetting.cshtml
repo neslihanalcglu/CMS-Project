@@ -1,0 +1,97 @@
+﻿@model Cms.DataAccess.Dtos.SettingDto
+@{
+    ViewData["Title"] = "EditSetting";
+}
+
+<h1>EditSetting</h1>
+
+<form method="post" enctype="multipart/form-data" asp-controller="Setting" asp-action="EditSetting">
+    <table>
+        <tr>
+            <td><input type="hidden" asp-for="Id" /></td>
+        </tr>
+        <tr>
+            <td>Page Title: </td>
+            <td><input type="text" id="PageTitle" name="PageTitle" asp-for="PageTitle" /></td>
+        </tr>
+        <tr>
+            <td>Page Description: </td>
+            <td><input type="text" id="PageDescription" name="PageDescription" asp-for="PageDescription" /></td>
+        </tr>
+        <tr>
+            <td>Web Server Address: </td>
+            <td><input type="text" id="WebServerAddress" name="WebServerAddress" asp-for="WebServerAddress" /></td>
+        </tr>
+        <tr>
+            <td>Web Server Port: </td>
+            <td><input type="text" id="WebServerPort" name="WebServerPort" asp-for="WebServerPort" /></td>
+        </tr>
+        <tr>
+            <td>SMTP Server Address: </td>
+            <td><input type="text" id="SMTPServerAddress" name="SMTPServerAddress" asp-for="SMTPServerAddress" /></td>
+        </tr>
+        <tr>
+            <td>SMTP Server Port: </td>
+            <td><input type="text" id="SMTPServerPort" name="SMTPServerPort" asp-for="SMTPServerPort" /></td>
+        </tr>
+        <tr>
+            <td>Web Mail User Name: </td>
+            <td><input type="text" id="WebMailUserName" name="WebMailUserName" asp-for="WebMailUserName" /></td>
+        </tr>
+        <tr>
+            <td>Web Mail Password: </td>
+            <td><input type="text" id="WebMailPassword" name="WebMailPassword" asp-for="WebMailPassword" /></td>
+        </tr>
+        <tr>
+            <td>Tel: </td>
+            <td><input type="text" id="Tel" name="Tel" asp-for="Tel" /></td>
+        </tr>
+        <tr>
+            <td>Gsm: </td>
+            <td><input type="text" id="Gsm" name="Gsm" asp-for="Gsm" /></td>
+        </tr>
+        <tr>
+            <td>Fax: </td>
+            <td><input type="text" id="Fax" name="Fax" asp-for="Fax" /></td>
+        </tr>
+        <tr>
+            <td>Company Address: </td>
+            <td><input type="text" id="CompanyAddress" name="CompanyAddress" asp-for="CompanyAddress" /></td>
+        </tr>
+        <tr>
+            <td>Location_Lat: </td>
+            <td><input type="text" id="Location_Lat" name="Location_Lat" asp-for="Location_Lat" /></td>
+        </tr>
+        <tr>
+            <td>Location_Lng: </td>
+            <td><input type="text" id="Location_Lng" name="Location_Lng" asp-for="Location_Lng" /></td>
+        </tr>
+        <tr>
+            <td>Company Logo: </td>
+            <td><input type="text" id="CompanyLogo" name="CompanyLogo" asp-for="CompanyLogo" /></td>
+        </tr>
+        <tr>
+            <td>Is Active: </td>
+            <td><input type="text" id="IsActive" name="IsActive" asp-for="IsActive" /></td>
+        </tr>
+        @*<tr>
+            <td>Created Date: </td>
+            <td><input type="text" id="CreatedDate" name="CreatedDate" asp-for="CreatedDate" /></td>
+        </tr>
+        <tr>
+            <td>Modified Date: </td>
+            <td><input type="text" id="ModifiedDate" name="ModifiedDate" asp-for="ModifiedDate" /></td>
+        </tr>
+        <tr>
+            <td>Is Deleted: </td>
+            <td><input type="text" id="IsDeleted" name="IsDeleted" asp-for="IsDeleted" /></td>
+        </tr>*@
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Submit" /></td>
+        </tr>
+    </table>
+    <hr />
+
+</form>
+

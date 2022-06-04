@@ -1,0 +1,57 @@
+﻿@model Cms.DataAccess.Dtos.PanelUserDto
+@{
+    ViewData["Title"] = "CreatePanelUser";
+}
+
+<h1>CreatePanelUser</h1>
+
+<form method="post" enctype="multipart/form-data" asp-controller="PanelUser" asp-action="CreatePanelUser">
+    <table>
+        <tr>
+            <td><input type="hidden" asp-for="Id" /></td>
+        </tr>
+        <tr>
+            <td>User Name: </td>
+            <td><input type="text" id="UserName" name="UserName" asp-for="UserName" /></td>
+        </tr>
+        <tr>
+            <td>Password: </td>
+            <td><input type="text" id="Password" name="Password" asp-for="Password" /></td>
+        </tr>
+        <tr>
+            <td>RePassword: </td>
+            <td><input type="text" id="RePassword" name="RePassword" asp-for="RePassword" /></td>
+        </tr>
+        <tr>
+            <td>Email: </td>
+            <td><input type="text" id="Email" name="Email" asp-for="Email" /></td>
+        </tr>
+        <tr>
+            <td>Role: </td>
+            <td><input type="text" id="Role" name="Role" asp-for="Role" /></td>
+        </tr>
+        @*<tr>
+            <td>Is Active: </td>
+            <td><input type="text" id="IsActive" name="IsActive" asp-for="IsActive" /></td>
+        </tr>
+        <tr>
+            <td>Created Date: </td>
+            <td><input type="text" id="CreatedDate" name="CreatedDate" asp-for="CreatedDate" /></td>
+        </tr>
+        <tr>
+            <td>Modified Date: </td>
+            <td><input type="text" id="ModifiedDate" name="ModifiedDate" asp-for="ModifiedDate" /></td>
+        </tr>
+        <tr>
+            <td>Is Deleted: </td>
+            <td><input type="text" id="IsDeleted" name="IsDeleted" asp-for="IsDeleted" /></td>
+        </tr>*@
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Submit" /></td>
+        </tr>
+    </table>
+    <hr />
+
+</form>
+

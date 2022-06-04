@@ -1,0 +1,15 @@
+C:\Users\NeslihanAlcglu\Desktop\CMSProject\Cms.Entities\bin\Debug\net5.0\Cms.Entities.deps.json
+C:\Users\NeslihanAlcglu\Desktop\CMSProject\Cms.Entities\bin\Debug\net5.0\Cms.Entities.runtimeconfig.json
+C:\Users\NeslihanAlcglu\Desktop\CMSProject\Cms.Entities\bin\Debug\net5.0\Cms.Entities.runtimeconfig.dev.json
+C:\Users\NeslihanAlcglu\Desktop\CMSProject\Cms.Entities\bin\Debug\net5.0\Cms.Entities.dll
+C:\Users\NeslihanAlcglu\Desktop\CMSProject\Cms.Entities\bin\Debug\net5.0\ref\Cms.Entities.dll
+C:\Users\NeslihanAlcglu\Desktop\CMSProject\Cms.Entities\bin\Debug\net5.0\Cms.Entities.pdb
+C:\Users\NeslihanAlcglu\Desktop\CMSProject\Cms.Entities\obj\Debug\net5.0\Cms.Entities.csprojAssemblyReference.cache
+C:\Users\NeslihanAlcglu\Desktop\CMSProject\Cms.Entities\obj\Debug\net5.0\Cms.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\NeslihanAlcglu\Desktop\CMSProject\Cms.Entities\obj\Debug\net5.0\Cms.Entities.AssemblyInfoInputs.cache
+C:\Users\NeslihanAlcglu\Desktop\CMSProject\Cms.Entities\obj\Debug\net5.0\Cms.Entities.AssemblyInfo.cs
+C:\Users\NeslihanAlcglu\Desktop\CMSProject\Cms.Entities\obj\Debug\net5.0\Cms.Entities.csproj.CoreCompileInputs.cache
+C:\Users\NeslihanAlcglu\Desktop\CMSProject\Cms.Entities\obj\Debug\net5.0\Cms.Entities.dll
+C:\Users\NeslihanAlcglu\Desktop\CMSProject\Cms.Entities\obj\Debug\net5.0\ref\Cms.Entities.dll
+C:\Users\NeslihanAlcglu\Desktop\CMSProject\Cms.Entities\obj\Debug\net5.0\Cms.Entities.pdb
+C:\Users\NeslihanAlcglu\Desktop\CMSProject\Cms.Entities\obj\Debug\net5.0\Cms.Entities.genruntimeconfig.cache

@@ -1,0 +1,37 @@
+﻿@model List<Cms.Entities.DataContext.PanelUser>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<table class="table table-bordered table-responsive table-hover">
+    <tr>
+        <th>Id </th>
+        <th>UserName </th>
+        <th>Password</th>
+        <th>RePassword</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>IsActive</th>
+        <th>CreatedDate</th>
+        <th>ModifiedDate</th>
+        <th>IsDeleted</th>
+    </tr>
+    @foreach (var d in Model)
+    {
+<tr>
+    <td>@d.Id</td>
+    <td>@d.UserName</td>
+    <td>@d.Password</td>
+    <td>@d.RePassword</td>
+    <td>@d.Email</td>
+    <td>@d.Role</td>
+    <td>@d.IsActive</td>
+    <td>@d.CreatedDate</td>
+    <td>@d.ModifiedDate</td>
+    <td>@d.IsDeleted</td>
+    <td><a href="/PanelUser/EditPanelUser/@d.Id" class="btn btn-warning">Update</a></td>
+    <td><a href="/PanelUser/DeletePanelUser/@d.Id" class="btn btn-danger">Delete</a></td>
+</tr>}
+</table>
+<a href="/PanelUser/CreatePanelUser/" class="btn btn-info">New PanelUser</a>
+

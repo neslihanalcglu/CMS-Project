@@ -1,0 +1,33 @@
+﻿@model List<Cms.Entities.DataContext.PageContent>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<table class="table table-bordered table-responsive table-hover">
+    <tr>
+        <th>Id </th>
+        <th>PageTitle </th>
+        <th>PageDescription</th>
+        <th>PageDetails</th>
+        <th>IsActive</th>
+        <th>CreatedDate</th>
+        <th>ModifiedDate</th>
+        <th>IsDeleted</th>
+    </tr>
+    @foreach (var d in Model)
+    {
+<tr>
+    <td>@d.id</td>
+    <td>@d.pagetitle</td>
+    <td>@d.pagedescription</td>
+    <td>@d.pagedetails</td>
+    <td>@d.isactive</td>
+    <td>@d.createddate</td>
+    <td>@d.modifieddate</td>
+    <td>@d.isdeleted</td>
+    <td><a href="/PageContent/EditPageContent/@d.id" class="btn btn-warning">Update</a></td>
+    <td><a href="/PageContent/DeletePageContent/@d.id" class="btn btn-danger">Delete</a></td>
+</tr>}
+</table>
+<a href="/PageContent/CreatePageContent/" class="btn btn-info">New PageContent</a>
+

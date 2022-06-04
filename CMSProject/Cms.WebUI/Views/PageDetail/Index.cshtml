@@ -1,0 +1,36 @@
+﻿@model ReturnParameters
+@{ 
+    ViewData["Title"] = "Index";
+
+    @if (@Model.Where(w => w.key == "null").Count() > 0)
+    {
+        Context.Response.Redirect("/Home/Index");
+    } 
+ }
+<div class="container">
+    <div class="content-wrapper mt-xl-5">
+        <div class="no-gutters mt-5">
+            <h1>Welcome to page detail</h1>
+            <h1>
+                @*<button asp-controller="" asp-action="" asp-route-pr="" ></button>*@
+                ID :
+                @if (@Model.Where(w => w.key == "null").Count() == 0)
+                {
+                    @Model.Where(w => w.key == "page").FirstOrDefault().value;
+                }
+            </h1>
+            <div>
+                @if (Model.Where(w => w.key == "page").FirstOrDefault().titleContainers != null && Model.Where(w => w.key == "page").FirstOrDefault().titleContainers.Count() > 0)
+                {
+                        @Model.Where(w => w.key == "page").FirstOrDefault().titleContainers.FirstOrDefault().pagedetails.ToString();
+                        @foreach (var item in Model.Where(w => w.key == "page").FirstOrDefault().titleContainers)
+                        {
+                            <div>
+                                @item.texteditor.ToString()
+                            </div>
+                         }
+                 }
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,68 @@
+﻿@model Cms.DataAccess.Dtos.Vw_TitleContainerDto
+@{
+    ViewData["Title"] = "CreateVw_TitleContainer";
+}
+
+<h1>CreateVw_TitleContainer</h1>
+
+<form method="post" enctype="multipart/form-data" asp-controller="PageTitle" asp-action="CreatePageTitle">
+    <table>
+        <tr>
+            <td><input type="hidden" asp-for="titleid" /></td>
+        </tr>
+        <tr>
+            <td>Menu Title: </td>
+            <td><input type="text" id="menutitle" name="menutitle" asp-for="menutitle" /></td>
+        </tr>
+        <tr>
+            <td>Menu Description: </td>
+            <td><input type="text" id="menudescription" name="menudescription" asp-for="menudescription" /></td>
+        </tr>
+        <tr>
+            <td>Target Selection: </td>
+            <td><input type="text" id="targetselection" name="targetselection" asp-for="targetselection" /></td>
+        </tr>
+        <tr>
+            <td>Currents Language: </td>
+            <td><input type="text" id="currentslanguage" name="currentslanguage" asp-for="currentslanguage" /></td>
+        </tr>
+        <tr>
+            <td>Row Number: </td>
+            <td><input type="text" id="rownumber" name="rownumber" asp-for="rownumber" /></td>
+        </tr>
+        <tr>
+            <td>Root ID: </td>
+            <td><input type="text" id="rootid" name="rootid" asp-for="rootid" /></td>
+        </tr>
+        <tr>
+            <td>Page Title: </td>
+            <td><input type="text" id="pagetitle" name="pagetitle" asp-for="pagetitle" /></td>
+        </tr>
+        <tr>
+            <td>Page Description: </td>
+            <td><input type="text" id="pagedescription" name="pagedescription" asp-for="pagedescription" /></td>
+        </tr>
+        <tr>
+            <td>Page Details: </td>
+            <td><input type="text" id="pagedetails" name="pagedetails" asp-for="pagedetails" /></td>
+        </tr>
+        <tr>
+            <td>Text Editor: </td>
+            <td><input type="text" id="texteditor" name="texteditor" asp-for="texteditor" /></td>
+        </tr>
+        <tr>
+            <td>Language: </td>
+            <td><input type="text" id="language" name="language" asp-for="language" /></td>
+        </tr>
+        <tr>
+            <td>Is Active: </td>
+            <td><input type="text" id="isactive" name="isactive" asp-for="isactive" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Submit" /></td>
+        </tr>
+    </table>
+    <hr />
+
+</form>

@@ -1,0 +1,35 @@
+﻿@model List<Cms.Entities.DataContext.ContactForm>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div class="mt-5">
+    <table class="table table-bordered table-responsive table-hover mt-5">
+        <tr>
+            <th>Id </th>
+            <th>NameSurname </th>
+            <th>Email</th>
+            <th>Tel</th>
+            <th>FormContent</th>
+            <th>IsReaded</th>
+            <th>IsAnswered</th>
+        </tr>
+        @foreach (var d in Model)
+        {
+            <tr>
+                <td>@d.Id</td>
+                <td>@d.NameSurname</td>
+                <td>@d.Email</td>
+                <td>@d.Tel</td>
+                <td>@d.FormContent</td>
+                <td>@d.IsReaded</td>
+                <td>@d.IsAnswered</td>
+                <td><a href="/ContactForm/EditContactForm/@d.Id" class="btn btn-warning">Update</a></td>
+                <td><a href="/ContactForm/DeleteContactForm/@d.Id" class="btn btn-danger">Delete</a></td>
+            </tr>
+
+        }
+    </table>
+    <a href="/ContactForm/CreateContactForm/" class="btn btn-info">New ContactForm</a>
+</div>
+

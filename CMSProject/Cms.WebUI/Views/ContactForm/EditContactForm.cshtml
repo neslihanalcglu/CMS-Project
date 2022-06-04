@@ -1,0 +1,45 @@
+﻿@model Cms.DataAccess.Dtos.ContactFormDto
+@{
+    ViewData["Title"] = "EditContactForm";
+}
+
+<h1>EditContactForm</h1>
+
+
+<form method="post" enctype="multipart/form-data" asp-controller="ContactForm" asp-action="EditContactForm">
+    <table>
+        <tr>
+            <td><input type="hidden" asp-for="Id" /></td>
+        </tr>
+        <tr>
+            <td>Name Surname: </td>
+            <td><input type="text" id="NameSurname" name="NameSurname" asp-for="NameSurname" /></td>
+        </tr>
+        <tr>
+            <td>Email: </td>
+            <td><input type="text" id="Email" name="Email" asp-for="Email" /></td>
+        </tr>
+        <tr>
+            <td>Tel: </td>
+            <td><input type="text" id="Tel" name="Tel" asp-for="Tel" /></td>
+        </tr>
+        <tr>
+            <td>Form Content: </td>
+            <td><input type="text" id="FormContent" name="FormContent" asp-for="FormContent" /></td>
+        </tr>
+        <tr>
+            <td>IsReaded: </td>
+            <td><input type="text" id="IsReaded" name="IsReaded" asp-for="IsReaded" /></td>
+        </tr>
+        <tr>
+            <td>IsAnswered: </td>
+            <td><input type="text" id="IsAnswered" name="IsAnswered" asp-for="IsAnswered" /></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Submit" /></td>
+        </tr>
+    </table>
+    <hr />
+
+</form>

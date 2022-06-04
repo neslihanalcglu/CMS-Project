@@ -1,0 +1,32 @@
+﻿@model List<Cms.Entities.DataContext.UploadFile> 
+@{
+    ViewData["Title"] = "Index";
+}
+
+<table class="table table-bordered table-responsive table-hover">
+    <tr>
+        <th>Id </th>
+        <th>NameSurname </th>
+        <th>Email</th>
+        <th>Tel</th>
+        <th>FormContent</th>
+        <th>IsReaded</th>
+        <th>IsAnswered</th>
+    </tr>
+    @foreach (var d in Model)
+    {
+<tr>
+    <td>@d.Id</td>
+    <td>@d.Path</td>
+    <td>@d.FileName</td>
+    <td>@d.Extension</td>
+    <td>@d.IsActive</td>
+    <td>@d.CreatedDate</td>
+    <td>@d.ModifiedDate</td>
+    <td>@d.IsDeleted</td>
+    <td><a href="/UploadFile/EditUploadFile/@d.Id" class="btn btn-warning">Update</a></td>
+    <td><a href="/UploadFile/DeleteUploadFile/@d.Id" class="btn btn-danger">Delete</a></td>
+</tr>}
+</table>
+<a href="/UploadFile/CreateUploadFile/" class="btn btn-info">New UploadFile</a>
+

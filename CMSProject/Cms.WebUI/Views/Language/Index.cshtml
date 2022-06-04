@@ -1,0 +1,33 @@
+﻿@model List<Cms.Entities.DataContext.Language>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div><b>Table Format Data Displaying in ForEach</b><br /></div>
+<table class="table table-bordered table-responsive table-hover">
+    <tr>
+        <th>Id </th>
+        <th>Language Tag </th>
+        <th>Title</th>
+        <th>Value</th>
+    </tr>
+    @foreach (var d in Model)
+    {
+<tr>
+    <td>@d.Id</td>
+    <td>@d.LanguageTag</td>
+    <td>@d.Title</td>
+    <td>@d.Value</td>
+  
+   
+    <td><a href="/Language/EditLanguage/@d.Id"  class="btn btn-warning">Update</a></td>
+    <td
+
+        ><a href="/Language/DeleteLanguage/@d.Id" class="btn btn-danger">Delete</a>
+    
+    
+    </td>
+</tr>}
+</table>
+<a href="/Language/CreateLanguage/" class="btn btn-info">New ContactForm</a>
+

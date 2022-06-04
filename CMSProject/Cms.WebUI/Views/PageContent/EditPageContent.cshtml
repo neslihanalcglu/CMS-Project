@@ -1,0 +1,49 @@
+﻿@model Cms.DataAccess.Dtos.PageContentDto
+@{
+    ViewData["Title"] = "EditPageContent";
+}
+
+<h1>EditPageContent</h1>
+
+<form method="post" enctype="multipart/form-data" asp-controller="PageContent" asp-action="EditPageContent">
+    <table>
+        <tr>
+            <td><input type="hidden" asp-for="id" /></td>
+        </tr>
+        <tr>
+            <td>Page Title: </td>
+            <td><input type="text" id="PageTitle" name="pagetitle" asp-for="pagetitle" /></td>
+        </tr>
+        <tr>
+            <td>Page Description: </td>
+            <td><input type="text" id="PageDescription" name="PageDescription" asp-for="pagedescription" /></td>
+        </tr>
+        <tr>
+            <td>Page Details: </td>
+            <td><input type="text" id="pagedetails" name="pagedetails" asp-for="pagedetails" /></td>
+        </tr>
+        <tr>
+            <td>Is Active: </td>
+            <td><input type="text" id="isactive" name="isactive" asp-for="isactive" /></td>
+        </tr>
+        @*<tr>
+            <td>Created Date: </td>
+            <td><input type="text" id="CreatedDate" name="CreatedDate" asp-for="CreatedDate" /></td>
+        </tr>
+        <tr>
+            <td>Modified Date: </td>
+            <td><input type="text" id="ModifiedDate" name="ModifiedDate" asp-for="ModifiedDate" /></td>
+        </tr>
+        <tr>
+            <td>Is Deleted: </td>
+            <td><input type="text" id="IsDeleted" name="IsDeleted" asp-for="IsDeleted" /></td>
+        </tr>*@
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Submit" /></td>
+        </tr>
+    </table>
+    <hr />
+
+</form>
+

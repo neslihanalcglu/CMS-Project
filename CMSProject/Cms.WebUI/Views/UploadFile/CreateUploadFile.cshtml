@@ -1,0 +1,49 @@
+﻿@model Cms.DataAccess.Dtos.UploadFileDto
+@{
+    ViewData["Title"] = "CreateUploadFile";
+}
+
+<h1>CreateUploadFile</h1>
+
+<form method="post" enctype="multipart/form-data" asp-controller="UploadFile" asp-action="CreateUploadFile">
+    <table>
+        <tr>
+            <td><input type="hidden" asp-for="Id" /></td>
+        </tr>
+        <tr>
+            <td>Path: </td>
+            <td><input type="text" id="Path" name="Path" asp-for="Path" /></td>
+        </tr>
+        <tr>
+            <td>File Name: </td>
+            <td><input type="text" id="FileName" name="FileName" asp-for="FileName" /></td>
+        </tr>
+        <tr>
+            <td>Extension: </td>
+            <td><input type="text" id="Extension" name="Extension" asp-for="Extension" /></td>
+        </tr>
+        @*<tr>
+            <td>Is Active: </td>
+            <td><input type="text" id="IsActive" name="IsActive" asp-for="IsActive" /></td>
+        </tr>*@
+        @*<tr>
+            <td>Created Date: </td>
+            <td><input type="text" id="CreatedDate" name="CreatedDate" asp-for="CreatedDate" /></td>
+        </tr>*@
+        @*<tr>
+            <td>Modified Date: </td>
+            <td><input type="text" id="ModifiedDate" name="ModifiedDate" asp-for="ModifiedDate" /></td>
+        </tr>*@
+        @*<tr>
+            <td>Is Deleted: </td>
+            <td><input type="text" id="IsDeleted" name="IsDeleted" asp-for="IsDeleted" /></td>
+        </tr>*@
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Submit" /></td>
+        </tr>
+    </table>
+    <hr />
+
+</form>
+

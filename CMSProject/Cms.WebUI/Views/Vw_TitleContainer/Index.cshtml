@@ -1,0 +1,50 @@
+﻿@model List<Cms.Entities.DataContext.Vw_TitleContainer>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<table class="table table-bordered table-responsive table-hover">
+    <tr>
+        <th>Id </th>
+        <th>MenuTitle </th>
+        <th>MenuDescription</th>
+        <th>TargetSelection</th>
+        <th>CurrentsLanguage</th>
+        <th>RowNumber</th>
+        <th>RootID</th>
+        <th>PageTitle </th>
+        <th>PageDescription</th>
+        <th>PageDetails</th>
+        <th>TextEditor</th>
+        <th>Language</th>
+        <th>IsActive</th>
+        <th>CreatedDate </th>
+        <th>ModifiedDate</th>
+        <th>IsDeleted</th>
+    </tr>
+    @foreach (var d in Model)
+    {
+<tr>
+    <td>@d.titleid</td>
+    <td>@d.menutitle</td>
+    <td>@d.menudescription</td>
+    <td>@d.targetselection</td>
+    <td>@d.currentslanguage</td>
+    <td>@d.rownumber</td>
+    <td>@d.rootid</td>
+    <td>@d.pagetitle</td>
+    <td>@d.pagedescription</td>
+    <td>@d.pagedetails</td>
+    <td>@d.texteditor</td>
+    <td>@d.language</td>
+    <td>@d.isactive</td>
+    <td>@d.createddate</td>
+    <td>@d.modifieddate</td>
+    <td><a href="/Vw_TitleContainer/EditVw_TitleContainer/@d.titleid" class="btn btn-warning">Update</a></td>
+    <td><a href="/Vw_TitleContainer/DeleteVw_TitleContainer/@d.titleid" class="btn btn-danger">Delete</a></td>
+</tr>}
+</table>
+<a href="/Vw_TitleContainer/CreateVw_TitleContainer/" class="btn btn-info">New Vw_TitleContainer</a>
+

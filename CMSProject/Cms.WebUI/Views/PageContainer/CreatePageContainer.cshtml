@@ -1,0 +1,45 @@
+﻿@model Cms.DataAccess.Dtos.PageContainerDto
+@{
+    ViewData["Title"] = "CreatePageContainer";
+}
+
+<h1>CreatePageContainer</h1>
+
+<form method="post" enctype="multipart/form-data" asp-controller="PageContainer" asp-action="CreatePageContainer">
+    <table>
+        <tr>
+            <td><input type="hidden" asp-for="id" /></td>
+        </tr>
+        <tr>
+            <td>Text Editor: </td>
+            <td><input type="text" id="texteditor" name="texteditor" asp-for="texteditor" /></td>
+        </tr>
+        <tr>
+            <td>Language: </td>
+            <td><input type="text" id="language" name="language" asp-for="language" /></td>
+        </tr>
+        @*<tr>
+            <td>Is Active: </td>
+            <td><input type="text" id="IsActive" name="IsActive" asp-for="IsActive" /></td>
+        </tr>
+        <tr>
+            <td>Created Date: </td>
+            <td><input type="text" id="CreatedDate" name="CreatedDate" asp-for="CreatedDate" /></td>
+        </tr>
+        <tr>
+            <td>Modified Date: </td>
+            <td><input type="text" id="ModifiedDate" name="ModifiedDate" asp-for="ModifiedDate" /></td>
+        </tr>
+        <tr>
+            <td>Is Deleted: </td>
+            <td><input type="text" id="IsDeleted" name="IsDeleted" asp-for="IsDeleted" /></td>
+        </tr>*@
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Submit" /></td>
+        </tr>
+    </table>
+    <hr />
+
+</form>
+
